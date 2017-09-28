@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import LinkedInIcon from '../../static/iconmonstr-linkedin-3.svg'
+import TwitterIcon from '../../static/iconmonstr-twitter-1.svg'
 import { Colors } from '../../utils/styles'
 
 export const Name = styled.h3`
@@ -29,26 +31,14 @@ export const Skills = styled.div`opacity: 0.5;`
 
 export const Handles = styled.div`margin-top: 0.5em;`
 
-const HandleLink = styled.a`margin-right: 0.25em;`
-
-const HandleImage = styled.img`margin: 0em;`
+const HandleLink = styled.a`
+  margin-right: 0.25em;
+  fill: ${Colors.fourth};
+`
 
 export const Handle = ({ type, url }) => (
   <HandleLink href={url}>
-    <style jsx>{`
-      svg {
-        opacity: 0.8;
-      }
-    `}</style>
-    <HandleImage
-      src={
-        type === 'twitter' ? (
-          '/static/iconmonstr-twitter-1.svg'
-        ) : (
-          '/static/iconmonstr-linkedin-3.svg'
-        )
-      }
-    />
+    {type === 'twitter' ? <TwitterIcon /> : <LinkedInIcon />}
   </HandleLink>
 )
 
