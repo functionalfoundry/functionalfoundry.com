@@ -19,28 +19,29 @@ const Image = styled.img`
   margin: 0em;
 `
 
-export const Photo = ({ url }) => (
+export const Photo = ({ url }) =>
   <PhotoContainer>
     <Image src={url} />
   </PhotoContainer>
-)
 
 export const Role = styled.div``
 
-export const Skills = styled.div`opacity: 0.5;`
+export const Skills = styled.div`
+  opacity: 0.5;
+  line-height: 26px;
+`
 
 export const Handles = styled.div`margin-top: 0.5em;`
 
 const HandleLink = styled.a`
-  margin-right: 0.25em;
-  fill: ${Colors.fourth};
+  margin-right: 0.6em;
+  fill: ${Colors.third};
 `
 
-export const Handle = ({ type, url }) => (
-  <HandleLink href={url}>
+export const Handle = ({ type, url }) =>
+  <HandleLink href={url} target="_">
     {type === 'twitter' ? <TwitterIcon /> : <LinkedInIcon />}
   </HandleLink>
-)
 
 export default styled.div`
 

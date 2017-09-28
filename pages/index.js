@@ -29,13 +29,13 @@ const Logo = styled.img`
   margin: 0;
 `
 
-export default () => (
+export default () =>
   <App>
     <Row style={{ justifyContent: 'space-between' }}>
       <Column style={{ flex: 0.6, justifyContent: 'center' }}>
         <About>
-          We are a small agency founded to bring your products to the market using state
-          of the art technology and the best development practices out there.
+          We are a boutique agency founded to bring your products to market using state of
+          the art technology and tested development practices.
         </About>
       </Column>
       {/*
@@ -46,6 +46,59 @@ export default () => (
         </Column>
       */}
     </Row>
+    <Divider />
+    <Section>
+      <Header>Meet the team</Header>
+      <Content>
+        <Row style={{ justifyContent: 'space-between' }}>
+          <Column style={{ flex: '0.33' }}>
+            <Profile>
+              <Photo url="https://media.licdn.com/media/p/8/005/024/251/22d2a48.jpg" />
+              <Name>Yaniv Tal</Name>
+              <Role>Partner &amp; Software Engineer</Role>
+              <Skills>
+                A systems thinker that starts from the user experience and architects
+                solutions for agility.
+              </Skills>
+              <Handles>
+                <Handle type="twitter" url="https://twitter.com/yanivtalmusic" />
+                <Handle type="linkedin" url="https://www.linkedin.com/in/yanivtal9/" />
+              </Handles>
+            </Profile>
+          </Column>
+          <Column style={{ flex: '0.33' }}>
+            <Profile>
+              <Photo url="https://media.licdn.com/media/AAEAAQAAAAAAAAigAAAAJDUzZDIwNGU5LTlhNTMtNDIyNy04ZDZlLTllYzI1ODE5NmE0ZA.jpg" />
+              <Name>Brandon Ramirez</Name>
+              <Role>Partner &amp; Software Engineer</Role>
+              <Skills>
+                Brings focus to development processes and enjoys applying category theory
+                to improving codebases.
+              </Skills>
+              <Handles>
+                <Handle type="twitter" url="https://twitter.com/RezBrandon" />
+                <Handle type="linkedin" url="https://www.linkedin.com/in/1stramirez/" />
+              </Handles>
+            </Profile>
+          </Column>
+          <Column style={{ flex: '0.33' }}>
+            <Profile>
+              <Photo url="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAy_AAAAJGVhYWJkZTYzLTgyMTEtNGU1NC1hYTRjLWZkYmY1ZTcwMDhlOA.jpg" />
+              <Name>Jannis Pohlmann</Name>
+              <Role>Partner &amp; Software Engineer</Role>
+              <Skills>
+                Likes hard technical problems and developing robust libraries, frameworks,
+                and algorithms.
+              </Skills>
+              <Handles>
+                <Handle type="twitter" url="https://twitter.com/jannispohlmann" />
+                <Handle type="linkedin" url="https://linkedin.com/in/jannispohlmann" />
+              </Handles>
+            </Profile>
+          </Column>
+        </Row>
+      </Content>
+    </Section>
     <Divider />
     <Section>
       <Header>Our specialities</Header>
@@ -61,7 +114,11 @@ export default () => (
             communication
           </Item>
           <Item>
-            <strong>TypeScript / ReasonML / ClojureScript</strong> — to write the code in
+            <strong>TypeScript / ReasonML / ClojureScript</strong> — for frontend
+            languages
+          </Item>
+          <Item>
+            <strong>Node / Go</strong> — for servers
           </Item>
           <Item>
             <strong>Electron</strong> — for desktop apps
@@ -77,49 +134,14 @@ export default () => (
     </Section>
     <Divider />
     <Section>
-      <Header>Who whe are</Header>
-      <Content>
-        <Row style={{ justifyContent: 'space-between' }}>
-          <Column style={{ flex: '0.33' }}>
-            <Profile>
-              <Photo url="https://media.licdn.com/media/p/8/005/024/251/22d2a48.jpg" />
-              <Name>Yaniv Tal</Name>
-              <Role>Partner &amp; Software Engineer</Role>
-              <Skills>
-                Business development, software architecture, React development
-              </Skills>
-              <Handles>
-                <Handle type="twitter" url="https://twitter.com/yanivtalmusic" />
-                <Handle type="linkedin" url="https://www.linkedin.com/in/yanivtal9/" />
-              </Handles>
-            </Profile>
-          </Column>
-          <Column style={{ flex: '0.33' }}>
-            <Profile>
-              <Photo url="https://media.licdn.com/media/AAEAAQAAAAAAAAigAAAAJDUzZDIwNGU5LTlhNTMtNDIyNy04ZDZlLTllYzI1ODE5NmE0ZA.jpg" />
-              <Name>Brandon Ramirez</Name>
-              <Role>Partner &amp; Software Engineer</Role>
-              <Skills>Product development, development processes</Skills>
-              <Handles>
-                <Handle type="twitter" url="https://twitter.com/RezBrandon" />
-                <Handle type="linkedin" url="https://www.linkedin.com/in/1stramirez/" />
-              </Handles>
-            </Profile>
-          </Column>
-          <Column style={{ flex: '0.33' }}>
-            <Profile>
-              <Photo url="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAy_AAAAJGVhYWJkZTYzLTgyMTEtNGU1NC1hYTRjLWZkYmY1ZTcwMDhlOA.jpg" />
-              <Name>Jannis Pohlmann</Name>
-              <Role>Partner &amp; Software Engineer</Role>
-              <Skills>Processes, </Skills>
-              <Handles>
-                <Handle type="twitter" url="https://twitter.com/jannispohlmann" />
-                <Handle type="linkedin" url="https://linkedin.com/in/jannispohlmann" />
-              </Handles>
-            </Profile>
-          </Column>
-        </Row>
-      </Content>
+      <Row style={{ justifyContent: 'space-between' }}>
+        <Column style={{ flex: 0.8, justifyContent: 'center' }}>
+          <About>
+            We're comfortable joining a project early, often when it's still just a
+            concept. We'll help you to define an achievable project plan and work closely
+            with your team to turn your idea into reality.
+          </About>
+        </Column>
+      </Row>
     </Section>
   </App>
-)
