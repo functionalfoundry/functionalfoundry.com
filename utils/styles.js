@@ -23,6 +23,7 @@ export const TypographyConfig = new Typography({
   overrideStyles: () => ({
     'a, a:focus, a:active, a:visited, a:link': {
       color: Colors.fourth,
+      cursor: 'pointer',
       textDecoration: 'none',
     },
 

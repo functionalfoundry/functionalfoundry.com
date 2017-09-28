@@ -5,7 +5,14 @@ import Divider from '../components/Divider'
 import { Column, Row } from '../components/Flex'
 import List, { Item } from '../components/List'
 import Section, { Header, Content } from '../components/Section'
-import Profile, { Name, Photo, Role, Skills } from '../components/Profile'
+import Profile, {
+  Name,
+  Photo,
+  Role,
+  Skills,
+  Handles,
+  Handle,
+} from '../components/Profile'
 
 const About = styled.div`font-size: 1.5em;`
 
@@ -81,6 +88,10 @@ export default () => (
               <Skills>
                 Business development, software architecture, React development
               </Skills>
+              <Handles>
+                <Handle type="twitter" url="https://twitter.com/yanivtalmusic" />
+                <Handle type="linkedin" url="https://www.linkedin.com/in/yanivtal9/" />
+              </Handles>
             </Profile>
           </Column>
           <Column style={{ flex: '0.33' }}>
@@ -89,6 +100,10 @@ export default () => (
               <Name>Brandon Ramirez</Name>
               <Role>Partner &amp; Software Engineer</Role>
               <Skills>Product development, development processes</Skills>
+              <Handles>
+                <Handle type="twitter" url="https://twitter.com/RezBrandon" />
+                <Handle type="linkedin" url="https://www.linkedin.com/in/1stramirez/" />
+              </Handles>
             </Profile>
           </Column>
           <Column style={{ flex: '0.33' }}>
@@ -97,6 +112,10 @@ export default () => (
               <Name>Jannis Pohlmann</Name>
               <Role>Partner &amp; Software Engineer</Role>
               <Skills>Processes, </Skills>
+              <Handles>
+                <Handle type="twitter" url="https://twitter.com/jannispohlmann" />
+                <Handle type="linkedin" url="https://linkedin.com/in/jannispohlmann" />
+              </Handles>
             </Profile>
           </Column>
         </Row>
