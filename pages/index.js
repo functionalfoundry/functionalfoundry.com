@@ -13,6 +13,7 @@ import Profile, {
   Handles,
   Handle,
 } from '../components/Profile'
+import Project from '../components/Project'
 
 const About = styled.div`font-size: 1.5em;`
 
@@ -29,7 +30,7 @@ const Logo = styled.img`
   margin: 0;
 `
 
-export default () => (
+export default () =>
   <App>
     <Row style={{ justifyContent: 'space-between' }}>
       <Column style={{ flex: 0.8, justifyContent: 'center' }}>
@@ -138,11 +139,40 @@ export default () => (
         <Column style={{ flex: 0.8, justifyContent: 'center' }}>
           <About>
             We're comfortable joining a project early, often when it's still just a
-            concept. We'll help you to define an achievable project plan and work closely
+            concept. We'll help you define an achievable project plan and work closely
             with your team to turn your idea into reality.
           </About>
         </Column>
       </Row>
     </Section>
+    <Divider />
+    <Section>
+      <Header>Things we've built</Header>
+      <Content>
+        <Row style={{ justifyContent: 'space-between' }}>
+          <Column style={{ flex: '0.33' }}>
+            <Project url="https://s3.amazonaws.com/workflo/thumbnails/RuntimeManager.gif" />
+          </Column>
+          <Column style={{ flex: '0.33' }}>
+            <Project url="https://s3.amazonaws.com/workflo/thumbnails/LiveEditor.jpeg" />
+          </Column>
+          <Column style={{ flex: '0.33' }}>
+            <Project url="https://s3.amazonaws.com/workflo/thumbnails/Vimsical.png" />
+          </Column>
+        </Row>
+      </Content>
+    </Section>
+    <Divider />
+    <Section>
+      <Header>Blockchain</Header>
+      <Row style={{ justifyContent: 'space-between' }}>
+        <Column style={{ flex: 0.8, justifyContent: 'center' }}>
+          <About>
+            While relative newcomers to the space, we're rapidly developing a proficiency
+            in smart contracts and interacting with blockchains. If you're working in this
+            space, we'd love to talk with you.
+          </About>
+        </Column>
+      </Row>
+    </Section>
   </App>
-)
