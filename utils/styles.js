@@ -16,6 +16,12 @@ export const Widths = {
 export const TypographyConfig = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 2,
+  googleFonts: [
+    {
+      name: 'Avenir Next',
+      styles: [300, 400, 500, 600, 700],
+    },
+  ],
   headerFontFamily: ['Avenir Next'],
   bodyFontFamily: ['Avenir Next'],
   scaleRatio: 1.8,

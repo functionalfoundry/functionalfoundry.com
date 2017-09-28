@@ -1,6 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { TypographyStyle } from 'react-typography'
+import { GoogleFont, TypographyStyle } from 'react-typography'
 
 import { Colors, TypographyConfig } from '../utils/styles'
 
@@ -21,6 +21,7 @@ export default class MyDocument extends Document {
           <title>Functional Foundry</title>
           {this.props.styleTags}
           <TypographyStyle typography={TypographyConfig} />
+          <GoogleFont typography={TypographyConfig} />
         </Head>
         <body>
           <Main />
