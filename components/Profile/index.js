@@ -19,10 +19,11 @@ const Image = styled.img`
   margin: 0em;
 `
 
-export const Photo = ({ url }) =>
+export const Photo = ({ url }) => (
   <PhotoContainer>
     <Image src={url} />
   </PhotoContainer>
+)
 
 export const Role = styled.div``
 
@@ -36,12 +37,17 @@ export const Handles = styled.div`margin-top: 0.5em;`
 const HandleLink = styled.a`
   margin-right: 0.6em;
   fill: ${Colors.third};
+
+  &:hover {
+    fill: ${Colors.fourth};
+  }
 `
 
-export const Handle = ({ type, url }) =>
+export const Handle = ({ type, url }) => (
   <HandleLink href={url} target="_">
     {type === 'twitter' ? <TwitterIcon /> : <LinkedInIcon />}
   </HandleLink>
+)
 
 export default styled.div`
 
