@@ -155,7 +155,7 @@ export default () => (
             <Project url="https://s3.amazonaws.com/workflo/thumbnails/RuntimeManager.gif" />
           </Column>
           <Column style={{ flex: '0.50' }}>
-            <Project url="https://s3.amazonaws.com/workflo/thumbnails/LiveEditor.jpeg" />
+            <Project url="https://s3.amazonaws.com/workflo/thumbnails/workflo-demo.gif" />
           </Column>
         </Row>
       </Content>
