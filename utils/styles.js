@@ -14,7 +14,7 @@ export const Widths = {
 }
 
 export const TypographyConfig = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: '15px',
   baseLineHeight: 2,
   googleFonts: [
     {
@@ -24,7 +24,7 @@ export const TypographyConfig = new Typography({
   ],
   headerFontFamily: ['Avenir Next'],
   bodyFontFamily: ['Avenir Next'],
-  scaleRatio: 1.8,
+  scaleRatio: 2.0,
   bodyWeight: 400,
   overrideStyles: () => ({
     'a, a:focus, a:active, a:visited, a:link': {
