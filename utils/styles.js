@@ -6,6 +6,8 @@ export const Colors = {
   third: '#4D5061',
   fourth: '#5C80BC',
   fifth: '#E9EDDE',
+
+  secondDarker: '#EF2356',
 }
 
 export const Widths = {

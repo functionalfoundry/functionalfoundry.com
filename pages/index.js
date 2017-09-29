@@ -14,6 +14,7 @@ import Profile, {
   Handle,
 } from '../components/Profile'
 import Project from '../components/Project'
+import GetInTouch from '../components/GetInTouch'
 
 const About = styled.div`font-size: 1.5em;`
 
@@ -171,6 +172,9 @@ export default () => (
           </About>
         </Column>
       </Row>
+    </Section>
+    <Section style={{ padding: '6em 0em 2em 0em' }}>
+      <GetInTouch />
     </Section>
   </App>
 )
