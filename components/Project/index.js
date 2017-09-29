@@ -15,7 +15,8 @@ const Image = styled.img`
   margin: 0em;
 `
 
-export default ({ url }) =>
+export default ({ url }) => (
   <PhotoContainer>
     <Image src={url} />
   </PhotoContainer>
+)

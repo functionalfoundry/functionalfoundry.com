@@ -174,7 +174,7 @@ export default () => (
       </Row>
     </Section>
     <Section style={{ padding: '6em 0em 2em 0em' }}>
-      <GetInTouch />
+      <GetInTouch email="brandon@functionalfoundry.com" />
     </Section>
   </App>
 )

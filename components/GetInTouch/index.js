@@ -20,8 +20,8 @@ const GetInTouchButton = styled.a`
   }
 `
 
-export default () => (
+export default ({ email }) => (
   <GetInTouchContainer>
-    <GetInTouchButton href="mailto:">Get in touch</GetInTouchButton>
+    <GetInTouchButton href={`mailto:${email}`}>Get in touch</GetInTouchButton>
   </GetInTouchContainer>
 )
