@@ -18,35 +18,15 @@ import GetInTouch from '../components/GetInTouch'
 
 const About = styled.div`font-size: 1.5em;`
 
-const LogoContainer = styled.div`
-  display: flex;
-  flex: 1 auto;
-  flex-direction: row;
-  justify-content: flex-end;
-`
-
-const Logo = styled.img`
-  height: 200px;
-  width: auto;
-  margin: 0;
-`
-
-export default () =>
+export default () => (
   <App>
     <Row style={{ justifyContent: 'space-between' }}>
       <Column style={{ flex: 0.8, justifyContent: 'center' }}>
         <About>
           {'We are a boutique agency founded to bring compelling products to market using ' +
-            'state of the art technology and tested development practices.'}
+            'state of the art technology and battle-tested development practices.'}
         </About>
       </Column>
-      {/*
-        <Column style={{ flex: 0.3, justifyContent: 'center' }}>
-          <LogoContainer>
-            <Logo src="/static/logo.svg" />
-          </LogoContainer>
-        </Column>
-      */}
     </Row>
     <Divider />
     <Section>
