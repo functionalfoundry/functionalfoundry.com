@@ -82,7 +82,7 @@ export default props => (
     </Link>
     <Nav>
       <HeaderLink href="https://twitter.com/ffoundryhq">
-        Get in touch @ffoundryhq
+        Let's talk @ffoundryhq
       </HeaderLink>
     </Nav>
   </Header>
