@@ -36,8 +36,8 @@ export default () =>
     <Row style={{ justifyContent: 'space-between' }}>
       <Column style={{ flex: 0.8, justifyContent: 'center' }}>
         <About>
-          We are a boutique agency founded to bring products to market using state of the
-          art technology and tested development practices.
+          We are a boutique agency founded to bring compelling products to market using
+          state of the art technology and tested development practices.
         </About>
       </Column>
       {/*
