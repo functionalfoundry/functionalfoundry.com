@@ -11,12 +11,12 @@ const PhotoContainer = styled.div``
 
 const Image = styled.img`
   width: 450px;
-  height: auto;
+  height: 160px;
   margin: 0em;
+  object-fit: cover;
 `
 
-export default ({ url }) => (
+export default ({ url }) =>
   <PhotoContainer>
     <Image src={url} />
   </PhotoContainer>
-)

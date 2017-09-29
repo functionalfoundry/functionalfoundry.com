@@ -31,13 +31,13 @@ const Logo = styled.img`
   margin: 0;
 `
 
-export default () => (
+export default () =>
   <App>
     <Row style={{ justifyContent: 'space-between' }}>
       <Column style={{ flex: 0.8, justifyContent: 'center' }}>
         <About>
-          We are a boutique agency founded to bring your products to market using state of
-          the art technology and tested development practices.
+          We are a boutique agency founded to bring products to market using state of the
+          art technology and tested development practices.
         </About>
       </Column>
       {/*
@@ -151,11 +151,14 @@ export default () => (
       <Header>Things we've built</Header>
       <Content>
         <Row style={{ justifyContent: 'space-between' }}>
-          <Column style={{ flex: '0.50' }}>
+          <Column style={{ flex: '0.33' }}>
             <Project url="https://s3.amazonaws.com/workflo/thumbnails/RuntimeManager.gif" />
           </Column>
-          <Column style={{ flex: '0.50' }}>
+          <Column style={{ flex: '0.33' }}>
             <Project url="https://s3.amazonaws.com/workflo/thumbnails/workflo-demo.gif" />
+          </Column>
+          <Column style={{ flex: '0.33' }}>
+            <Project url="https://s3.amazonaws.com/workflo/thumbnails/TapSavvy+Dashboard.png" />
           </Column>
         </Row>
       </Content>
@@ -167,7 +170,7 @@ export default () => (
         <Column style={{ flex: 0.8, justifyContent: 'center' }}>
           <About>
             While relative newcomers to the space, we're rapidly developing a proficiency
-            in smart contracts and interacting with blockchains. If you're working in this
+            in smart contracts and integrating with blockchains. If you're working in this
             space, we'd love to talk with you.
           </About>
         </Column>
@@ -177,4 +180,3 @@ export default () => (
       <GetInTouch email="brandon@functionalfoundry.com" />
     </Section>
   </App>
-)
