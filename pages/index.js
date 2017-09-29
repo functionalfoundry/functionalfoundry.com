@@ -31,10 +31,10 @@ const Logo = styled.img`
   margin: 0;
 `
 
-export default () => (
+export default () =>
   <App>
     <Row style={{ justifyContent: 'space-between' }}>
-      <Column style={{ flex: 1, justifyContent: 'center' }}>
+      <Column style={{ flex: 0.8, justifyContent: 'center' }}>
         <About>
           {'We are a boutique agency founded to bring compelling products to market using ' +
             'state of the art technology and tested development practices.'}
@@ -180,4 +180,3 @@ export default () => (
       <GetInTouch email="brandon@functionalfoundry.com" />
     </Section>
   </App>
-)
