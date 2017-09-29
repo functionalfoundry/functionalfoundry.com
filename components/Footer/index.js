@@ -22,6 +22,43 @@ const Inner = styled(Row)`
   }
 `
 
+const Address = styled.div`
+  display: flex;
+  flex: 1 auto;
+  flex-direction: row;
+
+  strong:first-child {
+    width: 5em;
+  }
+
+  span:nth-child(n + 1):before {
+    content: ', ';
+  }
+
+  span:nth-child(2):before {
+    content: '';
+  }
+
+  @media (max-width: ${Widths.collapseLists}) {
+    margin-top: 2em;
+    flex-direction: column;
+
+    span:nth-child(n):before {
+      content: '';
+    }
+  }
+`
+
+const AddressesColumn = styled(Column)`
+  @media (max-width: ${Widths.collapseColumns}) {
+    margin-top: -2em;
+  }
+
+  @media (max-width: ${Widths.collapseLists}) {
+    margin-top: -2em;
+  }
+`
+
 export default props => (
   <Container {...props}>
     <style jsx>
@@ -40,7 +77,7 @@ export default props => (
       `}
     </style>
     <Inner>
-      <Column style={{ flex: '0 auto', paddingRight: '4em' }}>
+      <Column style={{ flex: '0.33 auto', paddingRight: '4em' }}>
         <List style={{ listStyle: 'none' }}>
           <Item style={{ color: Colors.second, fontWeight: '700' }}>
             Functional Foundry
@@ -53,20 +90,27 @@ export default props => (
           </Item>
         </List>
       </Column>
-      <Column style={{ flex: '0 auto' }}>
+      <AddressesColumn style={{ flex: '0.33 auto' }}>
         <List style={{ listStyle: 'none' }}>
-          <Item style={{ marginBottom: '2em' }}>
-            <strong>US</strong>
+          <Item>
+            <strong style={{ marginRight: '1em' }}>US</strong>
             <br />
-            543 Howard Street<br />San Francisco<br />CA 94105
-          </Item>
-          <Item style={{ marginBottom: '0em' }}>
-            <strong>Germany</strong>
-            <br />
-            Glockengießerstr. 13<br />D-23552 Lübeck
+            543 Howard Street<br />
+            San Francisco<br />
+            CA 94105
           </Item>
         </List>
-      </Column>
+      </AddressesColumn>
+      <AddressesColumn style={{ flex: '0.33 auto' }}>
+        <List style={{ listStyle: 'none' }}>
+          <Item>
+            <strong style={{ marginRight: '1em' }}>Germany</strong>
+            <br />
+            Glockengießerstraße 13<br />
+            D-23552 Lübeck
+          </Item>
+        </List>
+      </AddressesColumn>
     </Inner>
   </Container>
 )
