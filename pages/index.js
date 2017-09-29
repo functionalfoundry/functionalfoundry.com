@@ -31,13 +31,13 @@ const Logo = styled.img`
   margin: 0;
 `
 
-export default () =>
+export default () => (
   <App>
     <Row style={{ justifyContent: 'space-between' }}>
-      <Column style={{ flex: 0.8, justifyContent: 'center' }}>
+      <Column style={{ flex: 1, justifyContent: 'center' }}>
         <About>
-          We are a boutique agency founded to bring compelling products to market using
-          state of the art technology and tested development practices.
+          {'We are a boutique agency founded to bring compelling products to market using ' +
+            'state of the art technology and tested development practices.'}
         </About>
       </Column>
       {/*
@@ -137,7 +137,7 @@ export default () =>
     <Divider />
     <Section>
       <Row style={{ justifyContent: 'space-between' }}>
-        <Column style={{ flex: 0.8, justifyContent: 'center' }}>
+        <Column style={{ flex: 1, justifyContent: 'center' }}>
           <About>
             We're comfortable joining a project early, often when it's still just a
             concept. We'll help you define an achievable project plan and work closely
@@ -167,7 +167,7 @@ export default () =>
     <Section>
       <Header>Blockchain</Header>
       <Row style={{ justifyContent: 'space-between' }}>
-        <Column style={{ flex: 0.8, justifyContent: 'center' }}>
+        <Column style={{ flex: 1, justifyContent: 'center' }}>
           <About>
             While relative newcomers to the space, we're rapidly developing a proficiency
             in smart contracts and integrating with blockchains. If you're working in this
@@ -180,3 +180,4 @@ export default () =>
       <GetInTouch email="brandon@functionalfoundry.com" />
     </Section>
   </App>
+)
