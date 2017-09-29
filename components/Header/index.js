@@ -81,7 +81,7 @@ export default props => (
       </LogoLink>
     </Link>
     <Nav>
-      <HeaderLink href="https://twitter.com/ffoundryhq">
+      <HeaderLink href="https://twitter.com/ffoundryhq" target="_">
         Let's talk @ffoundryhq
       </HeaderLink>
     </Nav>

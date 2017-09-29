@@ -83,17 +83,21 @@ export default props => (
             Functional Foundry
           </Item>
           <Item>
-            <a href="https://linkedin.com/companies/functionalfoundry">LinkedIn</a>
+            <a href="https://linkedin.com/companies/functionalfoundry" target="_">
+              LinkedIn
+            </a>
           </Item>
           <Item>
-            <a href="https://twitter.com/ffoundryhq">Twitter</a>
+            <a href="https://twitter.com/ffoundryhq" target="_">
+              Twitter
+            </a>
           </Item>
         </List>
       </Column>
       <AddressesColumn style={{ flex: '0.33 auto' }}>
         <List style={{ listStyle: 'none' }}>
           <Item>
-            <strong style={{ marginRight: '1em' }}>US</strong>
+            <strong>United States</strong>
             <br />
             543 Howard Street<br />
             San Francisco<br />
@@ -104,7 +108,7 @@ export default props => (
       <AddressesColumn style={{ flex: '0.33 auto' }}>
         <List style={{ listStyle: 'none' }}>
           <Item>
-            <strong style={{ marginRight: '1em' }}>Germany</strong>
+            <strong>Germany</strong>
             <br />
             Glockengießerstraße 13<br />
             D-23552 Lübeck
