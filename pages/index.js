@@ -18,13 +18,13 @@ import GetInTouch from '../components/GetInTouch'
 
 const About = styled.div`font-size: 1.5em;`
 
-export default () => (
+export default () =>
   <App>
     <Row style={{ justifyContent: 'space-between' }}>
       <Column style={{ flex: 0.8, justifyContent: 'center' }}>
         <About>
           {'We are a boutique agency founded to bring compelling products to market using ' +
-            'state of the art technology and battle-tested development practices.'}
+            'state of the art technology and tested development practices.'}
         </About>
       </Column>
     </Row>
