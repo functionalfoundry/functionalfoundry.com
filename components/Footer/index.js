@@ -92,6 +92,11 @@ export default props => (
               Twitter
             </a>
           </Item>
+          <Item>
+            <a href="https://github.com/functionalfoundry" target="_">
+              GitHub
+            </a>
+          </Item>
         </List>
       </Column>
       <AddressesColumn style={{ flex: '0.33 auto' }}>
