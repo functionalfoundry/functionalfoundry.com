@@ -18,6 +18,11 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta
+            property="og:image"
+            content="https://s3.amazonaws.com/workflo/design-assets/LogoPadding.png"
+          />
+          <meta property="og:description" content="Fullstack & blockchain agency" />
           <title>Functional Foundry</title>
           {this.props.styleTags}
           <TypographyStyle typography={TypographyConfig} />
