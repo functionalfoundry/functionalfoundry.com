@@ -80,7 +80,7 @@ export default props => (
       <Column style={{ flex: '0.33 auto', paddingRight: '4em' }}>
         <List style={{ listStyle: 'none' }}>
           <Item style={{ color: Colors.second, fontWeight: '700' }}>
-            Functional Foundry
+            Functional Foundry, LLC
           </Item>
           <Item>
             <a href="https://linkedin.com/companies/functionalfoundry" target="_">
