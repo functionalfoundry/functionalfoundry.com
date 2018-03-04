@@ -110,16 +110,6 @@ export default props => (
           </Item>
         </List>
       </AddressesColumn>
-      <AddressesColumn style={{ flex: '0.33 auto' }}>
-        <List style={{ listStyle: 'none' }}>
-          <Item>
-            <strong>Germany</strong>
-            <br />
-            Glockengießerstraße 13<br />
-            D-23552 Lübeck
-          </Item>
-        </List>
-      </AddressesColumn>
     </Inner>
   </Container>
 )

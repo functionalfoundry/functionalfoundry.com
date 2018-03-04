@@ -67,7 +67,7 @@ export default () =>
             <Profile>
               <Photo url="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAy_AAAAJGVhYWJkZTYzLTgyMTEtNGU1NC1hYTRjLWZkYmY1ZTcwMDhlOA.jpg" />
               <Name>Jannis Pohlmann</Name>
-              <Role>Partner &amp; Software Engineer</Role>
+              <Role>External Consultant &amp; Software Engineer</Role>
               <Skills>
                 Likes hard technical problems and developing robust libraries, frameworks,
                 and algorithms.
